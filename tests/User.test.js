@@ -4,7 +4,7 @@ const User = require('../src/User')
 describe ('User', function () {
     test ('test username is valid', function(){
         const User1 = new User('Adam');
-        expect(typeof User1.name).toBe('string');
+        expect(typeof User1.username).toBe('string');
     })
     test ('test password is valid', function(){
         const User2 = new User('Dave', 'securepass');

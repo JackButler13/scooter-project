@@ -16,7 +16,8 @@ class Scooter{
       throw new Error('scooter needs repair');
     }
     else {
-      this.user = user;
+      this.user = user.username;
+      this.station = null;
     }
   }
   dock(station){
@@ -37,7 +38,5 @@ class Scooter{
   }
 }
 
-Scooter1 = new Scooter('station 1')
-Scooter1.rent('Adam')
-console.log(Scooter1)
+
 module.exports = Scooter
